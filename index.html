@@ -173,7 +173,7 @@ src="https://www.facebook.com/tr?id=1318990953124693&ev=PageView&noscript=1"
     if (!sessionStorage.getItem(pixelEventKey)) {
       const eventId = 'subscribe_' + Date.now() + '_' + Math.floor(Math.random() * 100000);
       fbq('track', 'Subscribe', {}, { eventID: eventId });
-      fbq('track', 'Lead');
+      // fbq('track', 'Lead');
       sessionStorage.setItem(pixelEventKey, 'true');
     }
 
